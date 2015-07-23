@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="js/ng-cordova.min.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content ng-controller="ExampleController">
+	  <button class="button" ng-click="scanBarcode()">Scan</button>
+    <button class="button" ng-click="pickPicture()">Pic gallery</button>
+    <p id="text"></p>
+    <button class="button" ng-click="clickPicture()">Click pic</button>
+    <img id="myImage"></img>
+      </ion-content>
+	  <!-- <ion-content ng-controller="PictureCtrl">
+	  <button class="button" ng-click="clickPicture()">Click pic</button>
+	  <img id="myImage"></img>
+	  </ion-content> -->
+    </ion-pane>
+  </body>
+</html>
